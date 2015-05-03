@@ -1,1 +1,1 @@
-# CoCPlanner
+# ClashPlanner
