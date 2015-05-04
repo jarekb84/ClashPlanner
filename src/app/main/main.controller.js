@@ -3,7 +3,7 @@
 class MainCtrl {
   constructor($scope) {
     $scope.tabs = [{
-      title: "Other",
+      title: 'Other',
       buildings: [{
         title: 'Town Hall',
         name: 'TownHall',
@@ -15,13 +15,13 @@ class MainCtrl {
         currentLevel: 1,
         maxLevel: 6
       }, {
-        title: "Builder's Hut",
+        title: 'Builder\'s Hut',
         name: 'BuilderHut',
         currentLevel: 1,
         maxLevel: 1
       }]
     }, {
-      title: "Army",
+      title: 'Army',
       buildings: [{
         title: 'Army Camp',
         name: 'ArmyCamp',
@@ -59,7 +59,7 @@ class MainCtrl {
         maxLevel: 1
       }, ]
     }, {
-      title: "Resource",
+      title: 'Resource',
       buildings: [{
         title: 'Gold Mine',
         name: 'GoldMine',
@@ -92,7 +92,7 @@ class MainCtrl {
         maxLevel: 6
       }, ]
     }, {
-      title: "Defensive",
+      title: 'Defensive',
       buildings: [{
         title: 'Cannon',
         name: 'Cannon',
@@ -104,7 +104,7 @@ class MainCtrl {
         currentLevel: 1,
         maxLevel: 13
       }, {
-        title: "Mortar",
+        title: 'Mortar',
         name: 'Mortar',
         currentLevel: 1,
         maxLevel: 8
@@ -140,7 +140,7 @@ class MainCtrl {
         maxLevel: 3
       }]
     }, {
-      title: "Traps",
+      title: 'Traps',
       buildings: [{
         title: 'Bomb',
         name: 'Bomb',
@@ -152,7 +152,7 @@ class MainCtrl {
         currentLevel: 1,
         maxLevel: 1
       }, {
-        title: "Giant Bomb",
+        title: 'Giant Bomb',
         name: 'GiantBomb',
         currentLevel: 1,
         maxLevel: 4
@@ -173,7 +173,7 @@ class MainCtrl {
         maxLevel: 3
       }]
     }, {
-      title: "Walls",
+      title: 'Walls',
       buildings: [{
         title: 'Wall',
         name: 'Wall',
@@ -186,14 +186,13 @@ class MainCtrl {
       if (building.currentLevel < building.maxLevel) {
         building.currentLevel++;
       }
-    }
+    };
 
     this.decrementLevel = building => {
       if (building.currentLevel > 0) {
         building.currentLevel--;
       }
-
-    }
+    };
   }
 
 }
