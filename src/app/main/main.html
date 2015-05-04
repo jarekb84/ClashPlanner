@@ -10,10 +10,9 @@
                   <img src="assets/images/game/{{building.name + building.currentLevel}}.png" alt="">
                   {{building.title}}</td>
                 <td>
-                  <md-icon md-font-icon="plus-circle-outline" alt="android "></md-icon>
-                  <md-button class="md-fab md-warn md-small" ng-click="vm.decrementLevel(building)">-</md-button>
+                  <md-button class="md-fab md-warn md-mini" ng-click="vm.decrementLevel(building)">-</md-button>
                   <span>{{building.currentLevel}} / {{building.maxLevel}}</span>
-                  <md-button class="md-fab md-primary" ng-click="vm.incrementLevel(building)">+</md-button>
+                  <md-button class="md-fab md-primary md-mini" ng-click="vm.incrementLevel(building)">+</md-button>
                 </td>
               </tr>
             </table>

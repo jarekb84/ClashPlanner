@@ -9,12 +9,24 @@
     "angular-resource": "~1.3.4",
     "angular-ui-router": "~0.2.13",
     "angular-material": "0.9.0-rc3",
-    "angular": "~1.3.4"
+    "angular": "~1.3.4",
+    "mdi": "~1.0.62-beta"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.4"
   },
   "resolutions": {
     "angular": "~1.3.4"
+  },
+  "overrides": {
+    "mdi": {
+      "main": [
+        "fonts/*",
+        "css/*",
+        "scss/materialdesignicons.scss",
+        "package.json",
+        "preview.html"
+      ]
+    }
   }
 }
