@@ -2,57 +2,200 @@
 
 class MainCtrl {
   constructor($scope) {
-    $scope.awesomeThings = [{
-      'title': 'AngularJS',
-      'url': 'https://angularjs.org/',
-      'description': 'HTML enhanced for web apps!',
-      'logo': 'angular.png'
+    $scope.tabs = [{
+      title: "Other",
+      buildings: [{
+        title: 'Town Hall',
+        name: 'TownHall',
+        currentLevel: 1,
+        maxLevel: 10
+      }, {
+        title: 'Clan Castle',
+        name: 'ClanCastle',
+        currentLevel: 1,
+        maxLevel: 6
+      }, {
+        title: "Builder's Hut",
+        name: 'BuilderHut',
+        currentLevel: 1,
+        maxLevel: 1
+      }]
     }, {
-      'title': 'BrowserSync',
-      'url': 'http://browsersync.io/',
-      'description': 'Time-saving synchronised browser testing.',
-      'logo': 'browsersync.png'
+      title: "Army",
+      buildings: [{
+        title: 'Army Camp',
+        name: 'ArmyCamp',
+        currentLevel: 1,
+        maxLevel: 8
+      }, {
+        title: 'Barracks',
+        name: 'Barracks',
+        currentLevel: 1,
+        maxLevel: 10
+      }, {
+        title: 'Dark Barracks',
+        name: 'DarkBarracks',
+        currentLevel: 1,
+        maxLevel: 6
+      }, {
+        title: 'Laboratory',
+        name: 'Laboratory',
+        currentLevel: 1,
+        maxLevel: 8
+      }, {
+        title: 'Spell Factory',
+        name: 'SpellFactory',
+        currentLevel: 1,
+        maxLevel: 5
+      }, {
+        title: 'Barbarian King Altar',
+        name: 'BarbarianKingAltar',
+        currentLevel: 1,
+        maxLevel: 1
+      }, {
+        title: 'Archer Queen Altar',
+        name: 'ArcherQueenAltar',
+        currentLevel: 1,
+        maxLevel: 1
+      }, ]
     }, {
-      'title': 'GulpJS',
-      'url': 'http://gulpjs.com/',
-      'description': 'The streaming build system.',
-      'logo': 'gulp.png'
+      title: "Resource",
+      buildings: [{
+        title: 'Gold Mine',
+        name: 'GoldMine',
+        currentLevel: 1,
+        maxLevel: 12
+      }, {
+        title: 'Elixir Collector',
+        name: 'ElixirCollector',
+        currentLevel: 1,
+        maxLevel: 12
+      }, {
+        title: 'Dark Elixir Drill',
+        name: 'DarkElixirDrill',
+        currentLevel: 1,
+        maxLevel: 6
+      }, {
+        title: 'Gold Storage',
+        name: 'GoldStorage',
+        currentLevel: 1,
+        maxLevel: 11
+      }, {
+        title: 'Elixir Storage',
+        name: 'ElixirStorage',
+        currentLevel: 1,
+        maxLevel: 11
+      }, {
+        title: 'Dark Elixir Storage',
+        name: 'DarkElixirStorage',
+        currentLevel: 1,
+        maxLevel: 6
+      }, ]
     }, {
-      'title': 'Jasmine',
-      'url': 'http://jasmine.github.io/',
-      'description': 'Behavior-Driven JavaScript.',
-      'logo': 'jasmine.png'
+      title: "Defensive",
+      buildings: [{
+        title: 'Cannon',
+        name: 'Cannon',
+        currentLevel: 1,
+        maxLevel: 13
+      }, {
+        title: 'Archer Tower',
+        name: 'ArcherTower',
+        currentLevel: 1,
+        maxLevel: 13
+      }, {
+        title: "Mortar",
+        name: 'Mortar',
+        currentLevel: 1,
+        maxLevel: 8
+      }, {
+        title: 'Air Defence',
+        name: 'AirDefence',
+        currentLevel: 1,
+        maxLevel: 8
+      }, {
+        title: 'Wizard Tower',
+        name: 'WizardTower',
+        currentLevel: 1,
+        maxLevel: 8
+      }, {
+        title: 'Air Sweeper',
+        name: 'AirSweeper',
+        currentLevel: 1,
+        maxLevel: 6
+      }, {
+        title: 'Hidden Tesla',
+        name: 'HiddenTesla',
+        currentLevel: 1,
+        maxLevel: 8
+      }, {
+        title: 'X-Bow',
+        name: 'X-Bow',
+        currentLevel: 1,
+        maxLevel: 4
+      }, {
+        title: 'Inferno Tower',
+        name: 'InfernoTower',
+        currentLevel: 1,
+        maxLevel: 3
+      }]
     }, {
-      'title': 'Karma',
-      'url': 'http://karma-runner.github.io/',
-      'description': 'Spectacular Test Runner for JavaScript.',
-      'logo': 'karma.png'
+      title: "Traps",
+      buildings: [{
+        title: 'Bomb',
+        name: 'Bomb',
+        currentLevel: 1,
+        maxLevel: 6
+      }, {
+        title: 'Spring Trap',
+        name: 'SpringTrap',
+        currentLevel: 1,
+        maxLevel: 1
+      }, {
+        title: "Giant Bomb",
+        name: 'GiantBomb',
+        currentLevel: 1,
+        maxLevel: 4
+      }, {
+        title: 'Air Bomb',
+        name: 'AirBomb',
+        currentLevel: 1,
+        maxLevel: 4
+      }, {
+        title: 'Seeking Air Mine',
+        name: 'SeekingAirMine',
+        currentLevel: 1,
+        maxLevel: 3
+      }, {
+        title: 'Skeleton Trap',
+        name: 'SkeletonTrap',
+        currentLevel: 1,
+        maxLevel: 3
+      }]
     }, {
-      'title': 'Protractor',
-      'url': 'https://github.com/angular/protractor',
-      'description': 'End to end test framework for AngularJS applications built on top of WebDriverJS.',
-      'logo': 'protractor.png'
-    }, {
-      'title': 'Angular Material Design',
-      'url': 'https://material.angularjs.org/#/',
-      'description': 'The Angular reference implementation of the Google\'s Material Design specification.',
-      'logo': 'angular-material.png'
-    }, {
-      'title': 'Sass (Node)',
-      'url': 'https://github.com/sass/node-sass',
-      'description': 'Node.js binding to libsass, the C version of the popular stylesheet preprocessor, Sass.',
-      'logo': 'node-sass.png'
-    }, {
-      'title': 'ES6 (Babel formerly 6to5)',
-      'url': 'https://babeljs.io/',
-      'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
-      'logo': 'babel.png'
+      title: "Walls",
+      buildings: [{
+        title: 'Wall',
+        name: 'Wall',
+        currentLevel: 1,
+        maxLevel: 11
+      }]
     }];
 
-    $scope.awesomeThings.forEach(awesomeThing => {
-      awesomeThing.rank = Math.random();
-    });
+    this.incrementLevel = building => {
+      if (building.currentLevel < building.maxLevel) {
+        building.currentLevel++;
+      }
+    }
+
+    this.decrementLevel = building => {
+      if (building.currentLevel > 0) {
+        building.currentLevel--;
+      }
+
+    }
   }
+
 }
 
 MainCtrl.$inject = ['$scope'];
