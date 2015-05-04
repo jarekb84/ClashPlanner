@@ -92,7 +92,7 @@ module.exports = function(options) {
   });
 
   gulp.task('deploy', function() {
-    return gulp.src('./dist/**/*')
+    return gulp.src(options.dist + '/**/*')
       .pipe($.ghPages());
   });
 
